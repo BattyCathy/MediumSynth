@@ -6,14 +6,12 @@
 //
 
 import UIKit
-
-class ViewController: UIViewController {
-
+class SynthViewController: UIViewController {
+    // MARK: Properties
+    // MARK: View Controller Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
+    // MARK: Selector Functions
+    // MARK: Private Functions
 }
-
