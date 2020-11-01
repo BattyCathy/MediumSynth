@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B12A9733254E451A00497E6C /* Oscillator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12A9732254E451A00497E6C /* Oscillator.swift */; };
+		B12A9737254F535400497E6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B12A9736254F535400497E6C /* Assets.xcassets */; };
+		B12A973F254F594D00497E6C /* UIColor+Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12A973C254F594D00497E6C /* UIColor+Set.swift */; };
+		B12A9740254F594D00497E6C /* UIView+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12A973E254F594D00497E6C /* UIView+Add.swift */; };
 		B12C6160254B95D800216144 /* Synth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12C615F254B95D800216144 /* Synth.swift */; };
 		B13EEC58254B90CC00E4A470 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13EEC57254B90CC00E4A470 /* AppDelegate.swift */; };
 		B13EEC5A254B90CD00E4A470 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13EEC59254B90CD00E4A470 /* SceneDelegate.swift */; };
 		B13EEC5C254B90CD00E4A470 /* SynthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13EEC5B254B90CD00E4A470 /* SynthViewController.swift */; };
-		B13EEC61254B90CE00E4A470 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B13EEC60254B90CE00E4A470 /* Assets.xcassets */; };
 		B13EEC64254B90CE00E4A470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B13EEC62254B90CE00E4A470 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B12A9732254E451A00497E6C /* Oscillator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oscillator.swift; sourceTree = "<group>"; };
+		B12A9736254F535400497E6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B12A973C254F594D00497E6C /* UIColor+Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Set.swift"; sourceTree = "<group>"; };
+		B12A973E254F594D00497E6C /* UIView+Add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Add.swift"; sourceTree = "<group>"; };
 		B12C615F254B95D800216144 /* Synth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Synth.swift; sourceTree = "<group>"; };
 		B13EEC54254B90CC00E4A470 /* MediumSynth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediumSynth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B13EEC57254B90CC00E4A470 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B13EEC59254B90CD00E4A470 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B13EEC5B254B90CD00E4A470 /* SynthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynthViewController.swift; sourceTree = "<group>"; };
-		B13EEC60254B90CE00E4A470 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B13EEC63254B90CE00E4A470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B13EEC65254B90CE00E4A470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -37,6 +43,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B12A9739254F593300497E6C /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		B12A973A254F594D00497E6C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B12A973B254F594D00497E6C /* UIColor Extensions */,
+				B12A973D254F594D00497E6C /* UIView Extensions */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B12A973B254F594D00497E6C /* UIColor Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B12A973C254F594D00497E6C /* UIColor+Set.swift */,
+			);
+			path = "UIColor Extensions";
+			sourceTree = "<group>";
+		};
+		B12A973D254F594D00497E6C /* UIView Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B12A973E254F594D00497E6C /* UIView+Add.swift */,
+			);
+			path = "UIView Extensions";
+			sourceTree = "<group>";
+		};
 		B13EEC4B254B90CC00E4A470 = {
 			isa = PBXGroup;
 			children = (
@@ -60,8 +98,11 @@
 				B13EEC59254B90CD00E4A470 /* SceneDelegate.swift */,
 				B13EEC5B254B90CD00E4A470 /* SynthViewController.swift */,
 				B12C615F254B95D800216144 /* Synth.swift */,
-				B13EEC60254B90CE00E4A470 /* Assets.xcassets */,
+				B12A9739254F593300497E6C /* Audio */,
+				B12A9732254E451A00497E6C /* Oscillator.swift */,
 				B13EEC62254B90CE00E4A470 /* LaunchScreen.storyboard */,
+				B12A9736254F535400497E6C /* Assets.xcassets */,
+				B12A973A254F594D00497E6C /* Extensions */,
 				B13EEC65254B90CE00E4A470 /* Info.plist */,
 			);
 			path = MediumSynth;
@@ -124,8 +165,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B12A9737254F535400497E6C /* Assets.xcassets in Resources */,
 				B13EEC64254B90CE00E4A470 /* LaunchScreen.storyboard in Resources */,
-				B13EEC61254B90CE00E4A470 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,10 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B12A973F254F594D00497E6C /* UIColor+Set.swift in Sources */,
 				B12C6160254B95D800216144 /* Synth.swift in Sources */,
 				B13EEC5C254B90CD00E4A470 /* SynthViewController.swift in Sources */,
+				B12A9740254F594D00497E6C /* UIView+Add.swift in Sources */,
 				B13EEC58254B90CC00E4A470 /* AppDelegate.swift in Sources */,
 				B13EEC5A254B90CD00E4A470 /* SceneDelegate.swift in Sources */,
+				B12A9733254E451A00497E6C /* Oscillator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
