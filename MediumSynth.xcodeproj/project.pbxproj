@@ -46,6 +46,8 @@
 		B12A9739254F593300497E6C /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				B12C615F254B95D800216144 /* Synth.swift */,
+				B12A9732254E451A00497E6C /* Oscillator.swift */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -55,6 +57,7 @@
 			children = (
 				B12A973B254F594D00497E6C /* UIColor Extensions */,
 				B12A973D254F594D00497E6C /* UIView Extensions */,
+				B12A973E254F594D00497E6C /* UIView+Add.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -70,9 +73,16 @@
 		B12A973D254F594D00497E6C /* UIView Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B12A973E254F594D00497E6C /* UIView+Add.swift */,
 			);
 			path = "UIView Extensions";
+			sourceTree = "<group>";
+		};
+		B12A9743254F6EF000497E6C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B13EEC5B254B90CD00E4A470 /* SynthViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		B13EEC4B254B90CC00E4A470 = {
@@ -94,16 +104,14 @@
 		B13EEC56254B90CC00E4A470 /* MediumSynth */ = {
 			isa = PBXGroup;
 			children = (
-				B13EEC57254B90CC00E4A470 /* AppDelegate.swift */,
-				B13EEC59254B90CD00E4A470 /* SceneDelegate.swift */,
-				B13EEC5B254B90CD00E4A470 /* SynthViewController.swift */,
-				B12C615F254B95D800216144 /* Synth.swift */,
-				B12A9739254F593300497E6C /* Audio */,
-				B12A9732254E451A00497E6C /* Oscillator.swift */,
+				B13EEC65254B90CE00E4A470 /* Info.plist */,
 				B13EEC62254B90CE00E4A470 /* LaunchScreen.storyboard */,
 				B12A9736254F535400497E6C /* Assets.xcassets */,
+				B13EEC57254B90CC00E4A470 /* AppDelegate.swift */,
+				B13EEC59254B90CD00E4A470 /* SceneDelegate.swift */,
+				B12A9743254F6EF000497E6C /* Controllers */,
+				B12A9739254F593300497E6C /* Audio */,
 				B12A973A254F594D00497E6C /* Extensions */,
-				B13EEC65254B90CE00E4A470 /* Info.plist */,
 			);
 			path = MediumSynth;
 			sourceTree = "<group>";
